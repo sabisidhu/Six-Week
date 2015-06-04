@@ -8,7 +8,7 @@ public class array {
 		int i;
 		int b;
 		for(i=1;i<10;i++){
-			b=Integer.parseInt(JOptionPane.showInputDialog("Enter Elements"));
+			a[i]=Integer.parseInt(JOptionPane.showInputDialog("Enter Elements"));
 			
 		}
 		
