@@ -3,25 +3,25 @@ package algorithm;
 import javax.swing.JOptionPane;
 
 public class DuplicateElemment {
-	public static void main(String[] args) {
-		int a[] = new int[10];
-		int i, temp;
-		for (i = 0; i < 5; i++) {
-			a[i] = Integer.parseInt(JOptionPane.showInputDialog("enter " + i
-					+ "variable"));
-		}
-		temp = a[0];
-
-		for (i = 1; i < 5; i++) {
-			for(int j=1;j< 5 ;j++)
-
-			{
-				
-				if (temp == a[i]) {
-					temp = a[i];
-				}
-			}
-		}
+	 public static void main(String a[]){
+         
+	        int[] arr = {5,2,7,2,4,7,8,2,3,2};
+	        for(int i=0;i<arr.length;i++){
+	            boolean isDuplicate = false;
+	            for(int j=0;j<i;j++){
+//	            	System.out.println(i+"  "+arr[i]+"  "+j+"  "+arr[j]);
+	                if(arr[i] == arr[j]){
+	                	
+	                    isDuplicate = true;
+	                    
+	                    break;
+	                }
+	            }
+	            if(!isDuplicate){
+               System.out.print(arr[i]+" ");
+	            }
+	        }
+	    
 	}
 
 }

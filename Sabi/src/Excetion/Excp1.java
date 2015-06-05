@@ -9,9 +9,9 @@ public class Excp1 {
 		String stt;
 		
 		try{
-			b[20]=10;
+			b[9]=10;
 		}catch(Exception e){
-			JOptionPane.showMessageDialog(null, " Array Bound Error ");	
+			JOptionPane.showMessageDialog(null, " Array Bound Error "+e);	
 		}
 		
 		JOptionPane.showMessageDialog(null, "Finish");

@@ -6,14 +6,15 @@ public class Excp2 {
 	public static void main(String[] args) {
 
 		int a = 2;
-		
-		try {
-int b=a/0;
-		} catch (Exception e) {
-			JOptionPane.showMessageDialog(null, "Can not Divide by  Zero ");
-		}
+		System.out.println("hello");
+		try{
 
-		JOptionPane.showMessageDialog(null, "Finish");
+		int b = a / 1;
+		}catch(Exception e){
+			System.err.println("Error");
+		}
+		System.out.println("Finish");
+
 
 	}
 }

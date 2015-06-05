@@ -5,11 +5,11 @@ import javax.swing.JOptionPane;
 public class exption {
 	public static void main(String[] args) {
 		int a;
-		int b[]=new int[10];
 		String stt;
 		
 		try{
 			a= Integer.parseInt(JOptionPane.showInputDialog("Enter the value"));
+			JOptionPane.showMessageDialog(null, a);
 		}catch(Exception e){
 			JOptionPane.showMessageDialog(null, "Please Enter Numeric Value ");	
 		}
